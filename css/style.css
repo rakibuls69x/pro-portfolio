@@ -1,10 +1,11 @@
 @import 'utilities.css';
 :root{
     --primary:#3DCFD3;
-    --dark:#161616;
+    --dark:hsl(0, 3%, 8%);
     --pure:#FFFFFF;
     --ternary:#898989;
     --light:#828282;
+    --secondary:#0f0f0f;
 }
 *{
     padding: 0;
@@ -66,4 +67,96 @@ header nav .branding{
 .hero .right p{
     line-height: 1.5;
     margin-bottom: 2rem;
+}
+section{
+    padding: 6rem 0;
+}
+section.about .about-me-img{
+    height: 450px;
+}
+section.about h1{
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: 400;
+}
+section.about h1 span{
+    color: var(--primary);
+}
+section.about h3{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+section.about p{
+    font-family: 'Lato' sans-serif;
+    color: var(--ternary);
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+section.about .social{
+    display: flex;
+}
+section.about .social .web{
+    height: 35px;
+    width: 35px;
+}
+section.about .social .fb{
+    height: 35px;
+    width: 35px;
+}
+section.about .social .ins{
+    height: 35px;
+    width: 35px;
+}
+section.about .social .prn{
+    height: 35px;
+    width: 35px;
+}
+section.about .social .tw{
+    height: 35px;
+    width: 35px;
+}
+section.about .social a{
+    background: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 50%;
+    margin-left: 7px;
+    transition: all 0.3s ease;
+    
+}
+section.about .social a:hover{
+   background: var(--ternary);
+   
+  
+}
+section.about .social a img{
+    height: 100%;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.section-heading {
+    color: var(--secondary);
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 0.5;
+
+}
+.section-heading span{
+    color: var(--primary);
+}
+.section-heading + p{
+    color: vr(--ternary);
+    font-family: 'Lato' sans-serif;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+section.services .card-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
