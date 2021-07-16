@@ -262,3 +262,214 @@ section.reviews .dots li.slick-active button{
     background: var(--primary);
     width: 20px;
 }
+section.work{
+    background: var(--light);
+}
+section.work .card-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem;
+}
+section.work .card-wrapper .card{
+    position: relative;
+}
+section.work .card-wrapper .card .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(61, 207, 211, 0.9);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    color: var(--pure);
+    opacity: 0;
+    transition: all 0.4s ease;
+    
+}
+section.work .card-wrapper .card:hover .overlay{
+    opacity: 1;
+}
+section.work .card-wrapper .card .overlay a{
+    color: var(--secondary);
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+section.work .card-wrapper .card img{
+    height: 100%;
+    width: 100%;
+
+}
+section.blog{
+    background: var(--dark);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 87%,0 100%);
+    padding-bottom: 14rem;
+}
+section.blog .section-heading{
+    color: var(--pure);
+
+}
+section.blog .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem;
+}
+section.blog .card-wrapper .card{
+    background: var(--pure);
+}
+
+section.blog .card-wrapper .card .card-content{
+    padding: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+section.blog .card-wrapper .card .card-content h1{
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+section.blog .card-wrapper .card .card-content a{
+    text-decoration: none;
+    text-align: center;
+    color: var(--secondary);
+    transition: all 0.3s ease;
+}
+section.blog .card-wrapper .card .card-content a:hover{
+    color: var(--primary);
+}
+section.blog .card-wrapper .card .card-content span{
+    font-size: 0.8rem;
+    color: var(--ternary);
+}
+section.blog .card-wrapper .card .card-content p{
+    font-family: 'Lato' sans-serif;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+section.blog .card-wrapper .card .card-content a.read-more{
+    font-size:1.2rem ;
+    color: var(--dark);
+    font-weight: 600;
+}
+section.blog .card-wrapper .card .card-content a.read-more:hover{
+    color: var(--primary);
+}
+section.contact .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem;
+    
+    justify-content: center;
+    text-align: center;
+}
+}
+section.contact .card-wrapper .card{
+    text-align: center;
+}
+section.contact .card-wrapper .card img{
+    margin-bottom: 1.5rem;
+}
+section.contact .card-wrapper .card h1{
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+}
+section.contact .card-wrapper .card h6{
+    font-size: 1.3rem;
+    color: var(--ternary);
+}
+
+section.contact .input-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    margin-bottom: 2rem;
+    
+}
+section.contact .input-wrapper-2{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--light);
+}
+section.contact input{
+    padding: 1rem;
+    border: 1px solid var(--light);
+    font-size: 1rem;
+}
+section.contact input:focus{
+    outline: none;
+}
+section.contact .form{
+    margin-top: 2rem;
+}
+section.contact .input-wrapper-2 input{
+    margin-bottom: 2rem;
+    font-size: 1rem;
+}
+section.contact .input-wrapper-2 textarea{
+    padding: 1rem;
+    border: 1px solid var(--light);
+    font-size: 1rem;
+    
+}
+section.contact .input-wrapper-2 textarea:focus{
+    outline: none;
+}
+section.contact .btn-wrapper{
+    text-align: center;
+    margin-top: 1rem;
+}
+
+footer .social-footer .web{
+    height: 35px;
+    width: 35px;
+    background: var(--light);
+    
+
+}
+footer .social-footer .fb{
+    height: 35px;
+    width: 35px;
+    background: var(--light);
+    border-radius: 50%;
+
+}
+footer .social-footer .ins{
+    height: 35px;
+    width: 35px;
+    background: var(--light);
+    border-radius: 50%;
+
+}
+footer .social-footer .prn{
+    height: 35px;
+    width: 35px;
+    background: var(--light);
+    border-radius: 50%;
+
+}
+footer .social-footer .tw{
+    height: 35px;
+    width: 35px;
+    background: var(--light);
+    border-radius: 50%;
+
+}
+footer .social-footer a{
+    margin-left: 1rem;
+}
+footer{
+    background: var(--dark);
+    text-align: center;
+    padding: 5rem;
+}
+
+footer .footer-logo{
+    margin-bottom: 3rem;
+    width: 200px;
+}
+footer .copyright{
+    color: var(--light);
+    margin-top: 1rem;
+}
